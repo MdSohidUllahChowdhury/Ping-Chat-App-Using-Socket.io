@@ -42,7 +42,7 @@ class LinkandTitle extends StatelessWidget {
                 'Following',
                 'You are now following $title',
                 snackPosition: SnackPosition.BOTTOM,
-                backgroundColor: Colors.teal.shade200,
+                backgroundColor: Colors.cyan.shade200,
                 colorText: Colors.white,
               );
             },

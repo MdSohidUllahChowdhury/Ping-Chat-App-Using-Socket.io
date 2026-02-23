@@ -7,7 +7,7 @@ class WidgetMessage {
     return Container(
       padding: const EdgeInsets.only(top: 48),
       height: 130,
-      color: Colors.teal,
+      color: Colors.cyan,
       child: Row(
         children: [
           IconButton(
@@ -105,8 +105,7 @@ class WidgetMessage {
   }
 
   static customChatTextFeild(context) {
-
-     final messageController = TextEditingController();
+    final messageController = TextEditingController();
     return Row(
       children: [
         Expanded(
@@ -194,7 +193,7 @@ class WidgetMessage {
                                           ),
                                           CircleAvatar(
                                             radius: 35,
-                                            backgroundColor: Colors.teal,
+                                            backgroundColor: Colors.cyan,
                                             child: Icon(
                                               Icons.pin_drop,
                                               size: 35,
@@ -234,7 +233,7 @@ class WidgetMessage {
         const SizedBox(width: 8),
         CircleAvatar(
           radius: 25,
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.cyan,
           child: IconButton(
               onPressed: () {},
               icon: const Icon(

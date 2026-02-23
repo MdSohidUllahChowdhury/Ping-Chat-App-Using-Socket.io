@@ -22,7 +22,7 @@ class _UpdatesState extends State<Updates> {
           ListTile(
             leading: CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.cyan,
               child: IconButton(
                   onPressed: () {},
                   icon: const Icon(

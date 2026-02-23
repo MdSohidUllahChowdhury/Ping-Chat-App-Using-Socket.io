@@ -17,7 +17,7 @@ class _CallsState extends State<Calls> {
           const SizedBox(height: 6),
           const ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.cyan,
               child: Icon(Icons.link, color: Colors.white),
             ),
             title: Text('Create call link'),
@@ -30,7 +30,7 @@ class _CallsState extends State<Calls> {
                 final i = calls[index];
                 return ListTile(
                   leading: CircleAvatar(
-                    radius: 28,
+                    radius: 30,
                     backgroundColor: Colors.blueGrey,
                     child: i.avatarUrl,
                   ),
@@ -51,7 +51,7 @@ class _CallsState extends State<Calls> {
                   ),
                   trailing: Icon(
                     i.isVideoCall ? Icons.videocam : Icons.call,
-                    color: Colors.teal,
+                    color: Colors.cyan,
                   ),
                   onTap: () {},
                 );

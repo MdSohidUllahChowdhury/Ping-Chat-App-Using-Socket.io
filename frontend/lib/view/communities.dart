@@ -57,7 +57,7 @@ class _CommunitiesState extends State<Communities> {
             onPressed: () {},
             child: const Text(
               'See example communites',
-              style: TextStyle(fontSize: 12, color: Colors.teal),
+              style: TextStyle(fontSize: 12, color: Colors.cyan),
             )),
         const SizedBox(
           height: 15,
@@ -72,7 +72,7 @@ class _CommunitiesState extends State<Communities> {
           },
           style: ButtonStyle(
             minimumSize: WidgetStateProperty.all<Size>(const Size(280, 45)),
-            backgroundColor: WidgetStateProperty.all<Color>(Colors.teal),
+            backgroundColor: WidgetStateProperty.all<Color>(Colors.cyan),
           ),
           child: const Text(
             'Start your community',

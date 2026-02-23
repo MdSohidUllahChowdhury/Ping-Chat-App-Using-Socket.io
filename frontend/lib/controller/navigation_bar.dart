@@ -27,7 +27,7 @@ class _NavigationBarOwnState extends State<NavigationBarOwn> {
 
   AppBar _buildAppBar() {
     return AppBar(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.cyan,
       elevation: 0,
       title: Text(
         "Ping",
@@ -66,8 +66,7 @@ class _NavigationBarOwnState extends State<NavigationBarOwn> {
             itemBuilder: (context) => [
                   const PopupMenuItem(value: 1, child: Text('New group')),
                   const PopupMenuItem(value: 2, child: Text('New broadcast')),
-                  const PopupMenuItem(
-                      value: 3, child: Text('Linked  devices')),
+                  const PopupMenuItem(value: 3, child: Text('Linked  devices')),
                   const PopupMenuItem(
                       value: 4, child: Text('Starred messages')),
                   const PopupMenuItem(value: 5, child: Text('Settings')),
@@ -78,7 +77,7 @@ class _NavigationBarOwnState extends State<NavigationBarOwn> {
 
   FloatingActionButton _buildFloatingActionButton() {
     return FloatingActionButton(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.cyan,
       onPressed: () {},
       child: const Icon(
         FontAwesomeIcons.folderPlus,

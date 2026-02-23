@@ -21,6 +21,8 @@ dependencies:
   # Local Parmission
   get: ^4.7.2
   flutter_launcher_icons: ^0.14.4
+
+  # Networking
   socket_io_client: ^3.1.4
   google_fonts: ^6.3.2
 

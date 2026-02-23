@@ -51,10 +51,10 @@ class Chats extends StatelessWidget {
                 },
                 leading: const CircleAvatar(
                   radius: 25,
-                  backgroundColor: Colors.amber,
+                  backgroundColor: Colors.indigo,
                   child: Icon(
                     Icons.person,
-                    size: 35,
+                    size: 30,
                     color: Colors.white,
                   ),
                 ),
@@ -73,7 +73,7 @@ class Chats extends StatelessWidget {
               ),
               const Icon(
                 Icons.archive_outlined,
-                color: Colors.teal,
+                color: Colors.cyan,
                 size: 20,
               ),
               const SizedBox(
