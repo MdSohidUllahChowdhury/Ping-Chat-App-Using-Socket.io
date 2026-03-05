@@ -5,14 +5,19 @@ var http = require('http');
 const { setFlagsFromString } = require('v8');
 const app = express();
 const server = http.createServer(app);
-const io = require('socket.io')(server)
+const io = require('socket.io')(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
+})
 
 //* Middel Ware
-//app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 //
-io.on("Connection", (socket) => {
+io.on("connection", (socket) => {
   console.log("Connected")
   console.log(socket.id, "Has joined")
   socket.on('event',

@@ -24,16 +24,34 @@ class _ChatConversationState extends State<ChatConversation> {
 
   void socketConnect() {
     socket = IO.io("http://192.168.0.212:5000", <String, dynamic>{
-      'transports': ['websocket'],
-      'autoConnect': false,
+      'transports': ['websocket', 'polling'],
+      'autoConnect': true,
+      'reconnection': true,
+      'reconnectionDelay': 1000,
+      'reconnectionDelayMax': 5000,
+      'reconnectionAttempts': 5
     });
 
-    socket!.connect();
-    socket!.emit('event', 'HI Socket');
-    socket!.onConnect((val) {
-      print(val);
+    socket!.onConnect((_) {
+      print('✓ Socket connected');
+      socket!.emit('event', 'HI Socket');
     });
-    print("Socket Status: => ${socket!.connected}");
+
+    socket!.on('event', (data) {
+      print('Received: $data');
+    });
+
+    socket!.onConnectError((data) {
+      print('✗ Connection error: $data');
+    });
+
+    socket!.onError((data) {
+      print('✗ Socket error: $data');
+    });
+
+    socket!.onDisconnect((_) {
+      print('✗ Socket disconnected');
+    });
   }
 
   @override
